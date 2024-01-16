@@ -16,9 +16,10 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
     background-color: var(--clr-black);
     color: var(--clr-white);
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -37,7 +38,8 @@ header> nav >a {
     color: var(--clr-white);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2rem;
+    display: none;
+    
     
 }
 
@@ -46,3 +48,66 @@ header > h1 {
     font-weight: 500;
 
 }
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    height: 700px;
+    justify-content: center;
+    
+    /* padding-inline coloca o espaço entere o elemento na esquerda e direita */
+}
+
+.home-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    gap: 2.5rem;
+    padding-inline: 1.5rem;
+    background-image: url('../img/Darth-IMG.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-size: 300px;
+
+}
+
+.home-cta > a {
+    background-color: var(--clr-primary);
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    color: var(--clr-white);
+    font-size: 14px;
+    text-decoration: none;
+
+    transition: transform 200ms;
+    /* O transition coloca um tempo para executar de forma gradual a ação(nesse exemplo transform) */
+}
+
+.home-cta > a:hover {
+    transform: scale(1.1);
+    
+}
+
+.home-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.home-heading > h1 {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 500;
+    margin: 0;
+}
+
+.home-heading > p {
+    line-height: 150%;
+    margin: 0;
+  
+}
+
